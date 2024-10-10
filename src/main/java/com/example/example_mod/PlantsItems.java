@@ -16,9 +16,9 @@ public class PlantsItems {
     public static final Item BROADLEAF_PLANTAIN_ITEM = new Item(new Settings());
     
     public static void register(ModContainer mod) {
-        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "belladonna_item"), BELLADONNA_ITEM);
-        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "hemlock_item"), HEMLOCK_ITEM);
-        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "broadleaf_plantain_item"), BROADLEAF_PLANTAIN_ITEM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "belladonna"), BELLADONNA_ITEM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "hemlock"), HEMLOCK_ITEM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "broadleaf_plantain"), BROADLEAF_PLANTAIN_ITEM);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL_BLOCKS).register(entries -> {
             entries.addItem(BELLADONNA_ITEM);
             entries.addItem(HEMLOCK_ITEM);
