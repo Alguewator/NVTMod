@@ -1,4 +1,4 @@
-package com.example.example_mod;
+package net.novateam.nvt_mod;
 
 import org.quiltmc.loader.api.ModContainer;
 
