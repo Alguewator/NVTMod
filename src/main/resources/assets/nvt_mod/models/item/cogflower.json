@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "example_mod:item/abyssal_stare"
+		"layer0": "nvt_mod:item/cogflower"
 	}
 }
