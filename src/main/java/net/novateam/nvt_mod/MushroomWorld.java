@@ -22,6 +22,8 @@ import net.minecraft.block.MapColor;
 
 public class MushroomWorld {
 
+    ////////// Shroom definition
+
     public static final Block FIREGUARD_MUSHROOM = new MushroomPlantBlock(
             TreeConfiguredFeatures.HUGE_RED_MUSHROOM,
             AbstractBlock.Settings.create()
@@ -32,12 +34,118 @@ public class MushroomWorld {
                     .sounds(BlockSoundGroup.GRASS)
                     .postProcess(Blocks::solid)
                     .pistonBehavior(PistonBehavior.DESTROY)
-                    .luminance(state -> 1)
-                    .nonOpaque()
-                    );
+                    .nonOpaque());
+    // Permet de linker cet objet à un item
+    public static final BlockItem FIREGUARD_MUSHROOM_ITEM = new BlockItem(FIREGUARD_MUSHROOM, new Settings());
+
+    public static final Block BLUE_ADAMANTITE_MUSHROOM = new MushroomPlantBlock(
+            TreeConfiguredFeatures.HUGE_RED_MUSHROOM,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .postProcess(Blocks::solid)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque());
+    public static final BlockItem BLUE_ADAMANTITE_MUSHROOM_ITEM = new BlockItem(BLUE_ADAMANTITE_MUSHROOM,
+            new Settings());
+
+    public static final Block SWIRL_TILESHROOM = new MushroomPlantBlock(
+            TreeConfiguredFeatures.HUGE_RED_MUSHROOM,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .postProcess(Blocks::solid)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque());
+    public static final BlockItem SWIRL_TILESHROOM_ITEM = new BlockItem(SWIRL_TILESHROOM,
+            new Settings());
+
+    public static final Block BROWN_TILESHROOM = new MushroomPlantBlock(
+            TreeConfiguredFeatures.HUGE_RED_MUSHROOM,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .postProcess(Blocks::solid)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque());
+    public static final BlockItem BROWN_TILESHROOM_ITEM = new BlockItem(BROWN_TILESHROOM,
+            new Settings());
+
+    public static final Block KINGS_CROWN_MUSHROOM = new MushroomPlantBlock(
+            TreeConfiguredFeatures.HUGE_RED_MUSHROOM,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .postProcess(Blocks::solid)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque());
+    public static final BlockItem KINGS_CROWN_MUSHROOM_ITEM = new BlockItem(KINGS_CROWN_MUSHROOM,
+            new Settings());
+
+    public static final Block SHROOZE_MUSHROOM = new MushroomPlantBlock(
+            TreeConfiguredFeatures.HUGE_RED_MUSHROOM,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .postProcess(Blocks::solid)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque());
+    public static final BlockItem SHROOZE_MUSHROOM_ITEM = new BlockItem(SHROOZE_MUSHROOM,
+            new Settings());
+
+    ///////////////// Register
 
     public static void register(ModContainer mod) {
-        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "fireguard"), FIREGUARD_MUSHROOM);
+        // Fireguard
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "fireguard_mushroom"),
+                FIREGUARD_MUSHROOM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "fireguard_mushroom"),
+                FIREGUARD_MUSHROOM_ITEM);
+
+        // Blue Adamantite
+
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "blue_adamantite_mushroom"),
+                BLUE_ADAMANTITE_MUSHROOM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "blue_adamantite_mushroom"),
+                BLUE_ADAMANTITE_MUSHROOM_ITEM);
+
+        // Swirl shroom
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "swirl_tileshroom"),
+                SWIRL_TILESHROOM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "swirl_tileshroom"),
+                SWIRL_TILESHROOM_ITEM);
+        // Brown shroom
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "brown_tileshroom"),
+                BROWN_TILESHROOM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "brown_tileshroom"),
+                BROWN_TILESHROOM_ITEM);
+        // King's Crown Shroom
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "kings_crown_mushroom"),
+                KINGS_CROWN_MUSHROOM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "kings_crown_mushroom"),
+                KINGS_CROWN_MUSHROOM_ITEM);
+
+        // Shrooze Mushroom
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "shrooze_mushroom"),
+                SHROOZE_MUSHROOM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "shrooze_mushroom"),
+                SHROOZE_MUSHROOM_ITEM);
+
     }
 
     /*

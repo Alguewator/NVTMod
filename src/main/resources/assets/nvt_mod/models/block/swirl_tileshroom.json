@@ -1,0 +1,19 @@
+{
+    "parent": "block/thin_block",
+    "textures": {
+        "particle": "nvt_mod:block/swirl_tileshroom"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 1, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0,  0, 16, 16 ], "texture": "nvt_mod:block/swirl_tileshroom", "cullface": "down" },
+                "up":    { "uv": [ 0,  0, 16, 16 ], "texture": "nvt_mod:block/swirl_tileshroom" },
+                "north": { "uv": [ 0, 15, 16, 16 ], "texture": "nvt_mod:block/swirl_tileshroom", "cullface": "north" },
+                "south": { "uv": [ 0, 15, 16, 16 ], "texture": "nvt_mod:block/swirl_tileshroom", "cullface": "south" },
+                "west":  { "uv": [ 0, 15, 16, 16 ], "texture": "nvt_mod:block/swirl_tileshroom", "cullface": "west" },
+                "east":  { "uv": [ 0, 15, 16, 16 ], "texture": "nvt_mod:block/swirl_tileshroom", "cullface": "east" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "nvt_mod:block/kings_crown"
+    }
+  }

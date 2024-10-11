@@ -1,4 +1,9 @@
 {
     "item.nvt_mod.uselessmiaou":"uselessmiaou",
-    "item.nvt_mod.fireguard":"Fireguard mushroom"
+    "block.nvt_mod.fireguard_mushroom":"Fireguard mushroom",
+    "block.nvt_mod.blue_adamantite_mushroom":"Blue adamantite mushroom",
+    "block.nvt_mod.swirl_tileshroom":"Swirl Tileshroom",
+    "block.nvt_mod.brown_tileshroom":"Brown Tileshroom",
+    "block.nvt_mod.kings_crown_mushroom":"Kings' crown mushroom",
+    "block.nvt_mod.shrooze_mushroom":"Shrooze"
 }

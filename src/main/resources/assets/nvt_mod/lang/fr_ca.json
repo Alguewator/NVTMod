@@ -1,4 +1,9 @@
 {
     "item.nvt_mod.uselessmiaou":"uselessmiaou",
-    "item.nvt_mod.fireguard":"Champignon couvre-feu"
+    "block.nvt_mod.fireguard_mushroom":"Champignon couvre-feu",
+    "block.nvt_mod.blue_adamantite_mushroom":"Champignon adamantite bleue",
+    "block.nvt_mod.swirl_tileshroom":"Champituile spiralée",
+    "block.nvt_mod.brown_tileshroom":"Champituile commune",
+    "block.nvt_mod.kings_crown_mushroom":"Couronne des rois",
+    "block.nvt_mod.shrooze_mushroom":"Champalcoolique"
 }

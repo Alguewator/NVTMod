@@ -1,0 +1,6 @@
+{
+    "parent": "nvt_mod:item/generated",
+    "textures": {
+      "layer0": "nvt_mod:block/fireguard"
+    } 
+  }
