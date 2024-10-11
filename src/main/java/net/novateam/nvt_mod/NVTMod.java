@@ -5,6 +5,9 @@ import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.render.RenderLayer;
+
 public class NVTMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod name as the logger's name.
@@ -15,5 +18,9 @@ public class NVTMod implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("Hello Quilt world from {}!", mod.metadata().name());
 		Artefacts.register(mod);
+		MushroomWorld.register(mod);
+		
+		// Allows to make the mushrooms or plants transparent or translucent
+		BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.FIREGUARD_MUSHROOM, RenderLayer.getCutout());
 	}
 }
