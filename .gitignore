@@ -32,3 +32,6 @@ workspace/
 
 # macOS
 *.DS_Store
+
+# GIMP project files
+*.xcf
