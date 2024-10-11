@@ -59,6 +59,7 @@ public class PlantsItems {
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "anchorweed"), ANCHORWEED_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "snowchild"), SNOWCHILD_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "tallflower"), TALLFLOWER_ITEM);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "sadguy"), SADGUY_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "ancient_bamboo_fruit"), ANCIENT_BAMBOO_FRUIT_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "dryflower"), DRYFLOWER_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "slithergrass"), SLITHERGRASS_ITEM);
@@ -85,6 +86,7 @@ public class PlantsItems {
             entries.addItem(ANCHORWEED_ITEM);
             entries.addItem(SNOWCHILD_ITEM);
             entries.addItem(TALLFLOWER_ITEM);
+            entries.addItem(SADGUY_ITEM);
             entries.addItem(ANCIENT_BAMBOO_FRUIT_ITEM);
             entries.addItem(DRYFLOWER_ITEM);
             entries.addItem(SLITHERGRASS_ITEM);
