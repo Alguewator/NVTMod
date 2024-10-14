@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nvt_mod:item/uselessmiaou"
+    "layer0": "nvt_mod:block/fireguard_mushroom"
   } 
-} 
+}
