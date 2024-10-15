@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "nvt_mod:block/fireguard"
+    "cross": "nvt_mod:block/fireguard_mushroom"
   }
 }

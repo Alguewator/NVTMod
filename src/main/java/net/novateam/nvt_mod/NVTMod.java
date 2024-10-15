@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.impl.registry.sync.trackers.vanilla.BlockItemTracker;
 import net.minecraft.client.render.RenderLayer;
 
 public class NVTMod implements ModInitializer {
@@ -22,5 +23,6 @@ public class NVTMod implements ModInitializer {
 		
 		// Allows to make the mushrooms or plants transparent or translucent
 		BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.FIREGUARD_MUSHROOM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.SHROOZE_MUSHROOM, RenderLayer.getCutout());
 	}
 }

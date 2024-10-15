@@ -1,5 +1,5 @@
 {
-    "parent": "nvt_mod:item/generated",
+    "parent": "minecraft:item/generated",
     "textures": {
       "layer0": "nvt_mod:block/blue_adamantite"
     } 
