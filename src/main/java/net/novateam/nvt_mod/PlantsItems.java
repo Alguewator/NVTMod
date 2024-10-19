@@ -4,16 +4,34 @@ import org.quiltmc.loader.api.ModContainer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.component.type.SuspiciousStewEffectsComponent;
+import net.minecraft.sound.BlockSoundGroup;
 
 public class PlantsItems {
-    public static final Item BELLADONNA_ITEM = new Item(new Settings());
-    public static final Block BELLADONNA_BLOCK = new Block(new Settings());
+    public static final Block BELLADONNA = new FlowerBlock(
+        SuspiciousStewEffectsComponent.DEFAULT,
+        net.minecraft.block.AbstractBlock.Settings.create()
+            .mapColor(MapColor.BLACK)
+            .noCollision()
+            .breakInstantly()
+            .sounds(BlockSoundGroup.GRASS)
+            .postProcess(Blocks::solid)
+            .pistonBehavior(PistonBehavior.DESTROY)
+            .nonOpaque()
+        );
+    public static final Item BELLADONNA_ITEM = new BlockItem(BELLADONNA, new Settings());
+    
     public static final Item HEMLOCK_ITEM = new Item(new Settings());
     public static final Item BROADLEAF_PLANTAIN_ITEM = new Item(new Settings());
     public static final Item POPPY_ITEM = new Item(new Settings());
@@ -41,7 +59,7 @@ public class PlantsItems {
     public static final Item FALLENFLOWER_ITEM = new Item(new Settings());
     public static void register(ModContainer mod) {
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "belladonna"), BELLADONNA_ITEM);
-        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "belladonna"), BELLADONNA_BLOCK);
+        // Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "belladonna"), BELLADONNA_BLOCK);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "hemlock"), HEMLOCK_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "broadleaf_plantain"), BROADLEAF_PLANTAIN_ITEM);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "poppy"), POPPY_ITEM);
@@ -95,5 +113,9 @@ public class PlantsItems {
             entries.addItem(SLITHERGRASS_ITEM);
             entries.addItem(FALLENFLOWER_ITEM);
         });
+    }
+
+    public static Block getBELLADONNA() {
+        return BELLADONNA;
     }
 }
