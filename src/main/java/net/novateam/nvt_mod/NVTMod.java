@@ -19,10 +19,10 @@ public class NVTMod implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("Hello Quilt world from {}!", mod.metadata().name());
 		Artefacts.register(mod);
-		MushroomWorld.register(mod);
+		//MushroomWorld.register(mod);
 		
 		// Allows to make the mushrooms or plants transparent or translucent
-		BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.FIREGUARD_MUSHROOM, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.SHROOZE_MUSHROOM, RenderLayer.getCutout());
+		//BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.FIREGUARD_MUSHROOM, RenderLayer.getCutout());
+		//BlockRenderLayerMap.INSTANCE.putBlock(MushroomWorld.SHROOZE_MUSHROOM, RenderLayer.getCutout());
 	}
 }
