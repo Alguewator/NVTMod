@@ -1,5 +1,6 @@
 package net.novateam.nvt_mod.mixin;
 
+import net.novateam.nvt_mod.NVTMod;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.novateam.nvt_mod.NVTMod;
 
